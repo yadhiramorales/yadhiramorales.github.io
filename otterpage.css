@@ -1,0 +1,103 @@
+body {
+  background-color: #fcbe85;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #E97451;
+  text-align: center;
+  font-family: 'Pacifico';
+  font-size: max(2vw, 7vw);
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: max(1vw, 1.2vw);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.figureClass {
+  text-align: center;
+  width: 40%;
+  margin: 0 10px;
+}
+
+.photo {
+  border: 3px solid white;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Corner rounding */
+#athian {
+  border-top-left-radius: 25px;
+}
+
+#paulo {
+  border-top-right-radius: 25px;
+}
+
+#wendy {
+  border-bottom-left-radius: 25px;
+}
+
+#yadhira {
+  border-bottom-right-radius: 25px;
+}
+
+.figcaptionClass {
+  color: #E97451;
+  font-size: max(2vw, 3vw);
+  font-family: 'Pacifico';
+}
+
+.bodyText {
+  text-align: center;
+  font-size: max(1vw, 1.7vw);
+  font-family: 'Pacifico';
+  margin: 0 auto;
+  color: white;
+  width: 80%;
+}
+
+.contactBody {
+  font-size: max(1vw, 1.5vw);
+  margin: 0 auto;
+  color: white;
+}
+
+.quote-section {
+  margin: 50px auto 40px;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  color: white;
+}
+
+#footerID {
+  font-size: 1.5vw;
+  font-family: 'Pacifico';
+  color: #E97451;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#contactForm {
+  display: block;
+  margin: 0 auto;
+}
