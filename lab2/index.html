@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 2: Guess the Number!</title>
-</head>
-<body>
-    <header>
-        <h1> Guess the Number! </h1>
-    </header>
+    <head>
+        <title> Guess a Number </title>
+        <meta charset="utf-8">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Guess the Number!</h1>
+            <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+        </header>
+        <br>
+        <div id="main"> Enter a guess:
+            <input type="text" id="playerGuess" size="5">
+            <button id="guessBtn"> Guess </button>
+            <button id="resetBtn"> Reset</button>
+            <div id="feedback"></div>
 
-     <!-- <button onclick="guess()"> Guess! </button>       inline event -->
+            <div>Attempts left:
+                <span id="attemptsLeft"></span>
+            </div>
+            <div>Previous Guesses:
+                <span id="guesses"></span>
+            </div>
 
-    <!-- <script>
-        function guess() {
-            alert("Guess the Number!"); // no way to call this alert with onclick without 
-        }                           // func. since it's not a function & onclick calls func.
-    </script> -->
+            <div id="scoreboard">
+                Wins: <span id="wins">0</span> <br> Losses: <span id="losses">0</span>
+            </div>
+        </div>
 
-    <input id="guessBox" type="text" size="5">
-
-    <button id="guessBtn"> Guess! </button>
-
-    <br>
-    <br>
-
-    <h3>Previous Guesses:</h3>
-    <div id="userGuesses">
-
-    </div>
-
-    <script src="js/script.js"></script>
-
-    <!-- button event using event listener -->
-
-    
-</body>
+    <script src="js/script.js"></script>    
+    </body>
 </html>

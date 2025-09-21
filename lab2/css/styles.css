@@ -1,0 +1,68 @@
+h1 {
+    background-color: rgba(26, 144, 255, 0.461);    
+    padding: 0.5rem 1rem;
+    font-size: 37px;
+}
+
+h2 {
+    background-color: rgba(68, 0, 255, 0.461);
+    padding: 0.4rem 1rem;
+}
+
+h1, h2 {
+    border: 2px outset rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    letter-spacing: 0.5px;
+}
+
+body {
+    text-align: center;
+    background-image: url("../img/numbers-background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2.3rem;
+}
+
+#main {
+    margin: 0 auto;
+    background-color: rgba(26, 144, 255, 0.461);
+    border: 2px outset rgb(0, 0, 0);
+    border-radius: 15px;
+    display: block;
+    font-weight: bold;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 0.6rem 1rem;
+}
+
+#guessBtn, #resetBtn {
+    background-color: #1a90ff;
+    color: white;                 
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem;              
+    padding: 0.5rem 0.9rem;        
+    border: none;
+    border-radius: 8px;           
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    line-break: strict;
+}
+
+#guessBtn:hover, #resetBtn:hover {
+    background-color: #005fcc;     
+    transform: scale(1.04); 
+    opacity: 0.95;      
+}
+
+#playerGuess {
+    font-family: 'Arial', sans-serif;  
+    font-size: 1rem;
+    caret-color: #1a90ff;  
+    appearance: none;  
+}
+

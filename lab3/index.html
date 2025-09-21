@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: JS Quiz</title>
+    <script src = "https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+</head>
+<body>
+    <h1>CSS Quiz</h1>
+    1. What CSS property changes the text color? <br>
+    <!-- can include line above in paragraph or div if we wanted to make
+     changes to the color, font, style -->
+
+    <label>
+        <input type="radio" name="q1" value="Text-Color"> Text-Color
+    </label>
+    <!-- gives accessibility to button, so then clicking on the label 
+            marks button, not just tiny btn 
+        name attribute allows only one button to be checked at a time-->
+
+    
+
+    <label>
+        <input type="radio" name="q1" value="Font-Color"> Font-Color
+    </label>
+
+    <label>
+        <input type="radio" name="q1" value="color"> color
+    </label>
+    <!-- name attributes only for radio buttons. -->
+     <!-- to randomize options, can put options in an array a -->
+
+
+
+    <br> 2. What CSS property changes the text color? <br>
+
+    <label>
+        <input type="checkbox" id="q2a" value="Text-Color"> Text-Color
+    </label>
+    
+
+    <label>
+        <input type="checkbox" id="q2b" value="Font-Color"> Font-Color
+    </label>
+
+    <label>
+        <input type="checkbox" name="q2c" value="color"> color
+    </label>
+    
+
+    <br>
+    <div> 3. What CSS property changes the text color? </div>
+
+    <div id="q3Options"></div>
+
+    <div> 4. What CSS property changes the text color? </div>
+    <input type="text" id="q4">
+    
+    
+    <br>
+    <br>
+
+
+    <button> Submit Quiz </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
