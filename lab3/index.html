@@ -3,66 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3: JS Quiz</title>
-    <script src = "https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <title>US Geography Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"> </script>
 </head>
-<body>
-    <h1>CSS Quiz</h1>
-    1. What CSS property changes the text color? <br>
-    <!-- can include line above in paragraph or div if we wanted to make
-     changes to the color, font, style -->
+<body class="text-center">
+    <h1 class="p-4 bg-light"> US Geography Quiz</h1>
 
-    <label>
-        <input type="radio" name="q1" value="Text-Color"> Text-Color
-    </label>
-    <!-- gives accessibility to button, so then clicking on the label 
-            marks button, not just tiny btn 
-        name attribute allows only one button to be checked at a time-->
+    <!-- First Question -->
+    <h3><span id="markImg1"></span> What is the capital of California? </h3>
+    <input type="text" id="q1">
+    <br><br>
+    <div id="q1Feedback"></div>
+    <br><br>
 
-    
+    <!-- Second Question -->
+    <h3><span id="markImg2"></span> What is the longest river? </h3>
+    <select id="q2"> <!-- select tag is for dropdown questions -->
+        <option value="">Select One</option>
+        <option value="ms">Mississippi</option>
+        <option value="mo">Missouri</option>
+        <option value="co">Colorado</option>
+        <option value="de">Delaware</option>
+    </select>
+    <br><br>
+    <div id="q2Feedback"></div>
+    <br><br>
 
-    <label>
-        <input type="radio" name="q1" value="Font-Color"> Font-Color
-    </label>
+    <!-- Third Question -->
+    <h3><span id="markImg3"></span>What presidents are carved into Mount Rushmore?</h3>
+    <input type="checkbox" id="Jackson"> <label for="Jackson"> A. Jackson </label>
+    <input type="checkbox" id="Franklin"> <label for="Franklin"> B. Franklin </label>
+    <input type="checkbox" id="Jefferson"> <label for="Jefferson"> T. Jefferson </label>
+    <input type="checkbox" id="Roosevelt"> <label for="Roosevelt"> T. Roosevelt </label>
+    <br><br>
+    <div id="q3Feedback"></div>
+    <br><br>
 
-    <label>
-        <input type="radio" name="q1" value="color"> color
-    </label>
-    <!-- name attributes only for radio buttons. -->
-     <!-- to randomize options, can put options in an array a -->
+    <!-- Fourth Question -->
+    <h3><span id="markImg4"></span>What is the smallest US state?</h3>
+    <!-- <input type="radio" name = "q4" id="me" value="Maine"> <label for="me"> Maine </label>
+    <input type="radio" name="q4" id= "ri" value="Rhode Island"> <label for="ri"> Rhode Island </label>
+    <input type="radio" name="q4" id= "md" value="Maryland"> <label for="md"> Maryland </label>
+    <input type="radio" name="q4" id= "de" value="Delaware"> <label for="de"> Delaware </label> -->
+        <!-- removing hard-coded input tags to order can be randomized in js -->
+
+    <div id="q4Choices"></div> <!-- alternative to above -->
+
+    <br><br>
+    <div id="q4Feedback"></div>
+    <br><br>
 
 
-
-    <br> 2. What CSS property changes the text color? <br>
-
-    <label>
-        <input type="checkbox" id="q2a" value="Text-Color"> Text-Color
-    </label>
-    
-
-    <label>
-        <input type="checkbox" id="q2b" value="Font-Color"> Font-Color
-    </label>
-
-    <label>
-        <input type="checkbox" name="q2c" value="color"> color
-    </label>
-    
+    <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+    <button class="btn btn-outline-dark"> Submit Quiz </button>
 
     <br>
-    <div> 3. What CSS property changes the text color? </div>
+    <h2 id="totalScore" class="text-info"></h2>
 
-    <div id="q3Options"></div>
-
-    <div> 4. What CSS property changes the text color? </div>
-    <input type="text" id="q4">
-    
-    
-    <br>
-    <br>
-
-
-    <button> Submit Quiz </button>
+    <h3 id="totalAttempts"></h3>
 
     <script src="js/script.js"></script>
 </body>
