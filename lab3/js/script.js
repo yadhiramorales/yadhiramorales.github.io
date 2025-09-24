@@ -11,7 +11,7 @@ displayQ4Choices();
 
 //Functions
 function displayQ4Choices() {
-    let q4ChoicesArray = ["Maine", "Rhode Island", "Maryland", "Delaware"];
+    let q4ChoicesArray = ["Los Angeles", "Sacramento", "San Diego", "San Francisco"];
     q4ChoicesArray = _.shuffle(q4ChoicesArray);
     for (let i=0; i < q4ChoicesArray.length; i++) {
         document.querySelector("#q4Choices").innerHTML += ` <input type="radio" name="q4" id= "${q4ChoicesArray[i]}"
@@ -56,39 +56,15 @@ function gradeQuiz() {
      let q4Response = document.querySelector("input[name=q4]:checked").value;
     console.log(q2Response);
 
-    // //Grading question 1
-    // if (q1Response == "sacramento") {
-    //     document.querySelector("#q1Feedback").innerHTML = "Correct!";
-    //     document.querySelector("#q1Feedback").className = "bg-success text-white";
-    //     document.querySelector("#markImg1").innerHTML = "<img src='img/checkmark.png' alt='Checkmark'>";
-    //     score += 20;
-    // } else {
-    //     document.querySelector("#q1Feedback").innerHTML = "Incorrect!";
-    //     document.querySelector("#q1Feedback").className = "bg-warning text-white";
-    //     document.querySelector("#markImg1").innerHTML = "<img src='img/xmark.png' alt='xmark'>";
-    // }
-
-    // //Grading question 2
-    // if (q2Response == "mo") {
-    //     document.querySelector("#q2Feedback").innerHTML = "Correct!";
-    //     document.querySelector("#q2Feedback").className = "bg-success text-white";
-    //     document.querySelector("#markImg2").innerHTML = "<img src='img/checkmark.png' alt='Checkmark'>";
-    //     score += 20;
-    // } else {
-    //     document.querySelector("#q2Feedback").innerHTML = "Incorrect!";
-    //     document.querySelector("#q2Feedback").className = "bg-warning text-white";
-    //     document.querySelector("#markImg2").innerHTML = "<img src='img/xmark.png' alt='xmark'>";
-    // }
-
     //Grading question 1
-    if (q1Response == "sacramento") {
+    if (q1Response == "yosemite") {
         rightAnswer(1);
     } else {
         wrongAnswer(1);
     }
 
     //Grading question 2
-    if (q2Response == "mo") {
+    if (q2Response == "pa") {
         rightAnswer(2);
     } else {
         wrongAnswer(2);
@@ -104,7 +80,7 @@ function gradeQuiz() {
     }
 
     //Grading question 4
-    if (q4Response == "Rhode Island"){
+    if (q4Response == "Los Angeles"){
         rightAnswer(4);
     } else {
         wrongAnswer(4);

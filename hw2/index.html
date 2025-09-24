@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Page</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1> Shopping Cart </h1>
+
+    <!-- Cart items -->
+    <section id="cart-items">
+        <div class="item">
+            <img src = "img/bottled-water.jpg" alt="bottled water">
+            <span class="item-name"> Purified Bottled Water, 16.9 fl oz, 40-count </span>
+            <input type="number" class="item-qty" value="1" min="1">
+            <span class="item-price" data-price="10">$10.00</span>
+        </div>
+        <div class="item">
+            <img src = "img/tide-detergent.png" alt="tide detergent">
+            <span class="item-name"> Tide Auto Dispense Liquid Laundry Detergent, 125 Loads, 154 fl oz </span>
+            <input type="number" class="item-qty" value="1" min="1">
+            <span class="item-price" data-price="22">$22.00</span>
+        </div>
+        <div class="item">
+            <img src = "img/cheez-its.jpeg" alt="Cheez-It">
+            <span class="item-name"> Cheez-It Crackers, White Cheddar, 15-count </span>
+            <input type="number" class="item-qty" value="1" min="1">
+            <span class="item-price" data-price="12">$12.00</span>
+        </div>
+    </section>
+
+    <!-- shipping method -->
+    <section id="ship-method">
+        <h2 id=""> Shipping method </h2>
+        <select id="ship-options">
+            <option value="standard">Standard Shipping</option>
+            <!-- add price and image -->
+            <option value="express">Express Shipping</option>
+            <!-- add price and image -->
+            <option value="priority">Priority Shipping</option>
+            <!-- add price and image -->
+        </select>
+    </section>
+
+
+    <h1> Order summary </h1>
+
+    <div id="subtotal">
+        Subtotal
+        <!-- price -->
+    </div>
+
+    <div id="shipping">
+        Shipping
+        <!-- price -->
+    </div>
+
+    <div id="total">
+        Total
+        <!-- price -->
+    </div>
+
+</body>
+</html>
