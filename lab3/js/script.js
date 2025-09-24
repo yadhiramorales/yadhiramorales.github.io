@@ -53,8 +53,8 @@ function gradeQuiz() {
     let q1Response = document.querySelector("#q1").value.toLowerCase();
     let q2Response = document.querySelector("#q2").value;
     //q3 response not needed since its multiple answer, we just see which options have and have not been checked
-     let q4Response = document.querySelector("input[name=q4]:checked").value;
-    console.log(q2Response);
+    let q4Response = document.querySelector("input[name=q4]:checked").value;
+    let q5Response = document.querySelector("#q5").value;
 
     //Grading question 1
     if (q1Response == "yosemite") {
@@ -71,8 +71,8 @@ function gradeQuiz() {
     }
 
     //Grading question 3
-    if (document.querySelector("#Jefferson").checked && document.querySelector("#Roosevelt").checked &&
-        !document.querySelector("#Jackson").checked && !document.querySelector("#Franklin").checked) {
+    if (document.querySelector("#Golden").checked && document.querySelector("#Bay").checked &&
+        document.querySelector("#Bixby").checked && !document.querySelector("#Shasta").checked) {
         rightAnswer(3);
     }
     else {
@@ -84,6 +84,13 @@ function gradeQuiz() {
         rightAnswer(4);
     } else {
         wrongAnswer(4);
+    }
+
+    //Grading question 5
+    if (q5Response == "840") {
+        rightAnswer(5);
+    } else {
+        wrongAnswer(5);
     }
 
     //display score
