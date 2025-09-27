@@ -10,56 +10,109 @@
     <h1> Shopping Cart </h1>
 
     <!-- Cart items -->
-    <section id="cart-items">
-        <div class="item">
-            <img src = "img/bottled-water.jpg" alt="bottled water">
-            <span class="item-name"> Purified Bottled Water, 16.9 fl oz, 40-count </span>
-            <input type="number" class="item-qty" value="1" min="1">
-            <span class="item-price" data-price="10">$10.00</span>
+    <div class="item">
+        <img src="img/bottled-water.jpg" alt="bottled water" class="imgClass">
+        <div class="item-info">
+            <span class="item-name">Purified Bottled Water</span>
+            <span class="item-desc">16.9 fl oz, 40-count</span>
         </div>
-        <div class="item">
-            <img src = "img/tide-detergent.png" alt="tide detergent">
-            <span class="item-name"> Tide Auto Dispense Liquid Laundry Detergent, 125 Loads, 154 fl oz </span>
-            <input type="number" class="item-qty" value="1" min="1">
-            <span class="item-price" data-price="22">$22.00</span>
+        <div class="item-qty-wrap">
+            <input type="number" class="item-qty" value="1" min="1" aria-label="Quantity">
         </div>
-        <div class="item">
-            <img src = "img/cheez-its.jpeg" alt="Cheez-It">
-            <span class="item-name"> Cheez-It Crackers, White Cheddar, 15-count </span>
-            <input type="number" class="item-qty" value="1" min="1">
-            <span class="item-price" data-price="12">$12.00</span>
+        <span class="item-price" data-price="10">$10.00</span>
+    </div>
+
+    <div class="item">
+        <img src="img/tide-detergent.png" alt="tide detergent" class="imgClass">
+        <div class="item-info">
+            <span class="item-name">Tide Auto Dispense Liquid Laundry Detergent</span>
+            <span class="item-desc">125 Loads, 154 fl oz</span>
         </div>
-    </section>
+        <div class="item-qty-wrap">
+            <input type="number" class="item-qty" value="1" min="1" aria-label="Quantity">
+        </div>
+        <span class="item-price" data-price="22">$22.00</span>
+    </div>
+
+    <div class="item">
+        <img src="img/cheez-its.jpeg" alt="Cheez-It" class="imgClass">
+        <div class="item-info">
+            <span class="item-name">Cheez-It Crackers</span>
+            <span class="item-desc">White Cheddar, 15-count</span>
+        </div>
+        <div class="item-qty-wrap">
+            <input type="number" class="item-qty" value="1" min="1" aria-label="Quantity">
+        </div>
+        <span class="item-price" data-price="12">$12.00</span>
+    </div>
+
 
     <!-- shipping method -->
     <section id="ship-method">
-        <h2 id=""> Shipping method </h2>
-        <select id="ship-options">
-            <option value="standard">Standard Shipping</option>
-            <!-- add price and image -->
-            <option value="express">Express Shipping</option>
-            <!-- add price and image -->
-            <option value="priority">Priority Shipping</option>
-            <!-- add price and image -->
-        </select>
+    <h2>Shipping Method</h2>
+
+    <div class="shipping-option">
+        <label>
+            <div class="ship-left">
+                <input type="radio" id="standard" name="shipping" value="7">
+                <div class="ship-info">
+                    <span class="ship-title">Standard Shipping</span>
+                    <span class="ship-desc">4-6 business day delivery once shipped</span>
+                </div>
+            </div>
+            <span class="ship-price">$7.00</span>
+        </label>
+    </div>
+
+    <div class="shipping-option">
+        <label>
+            <div class="ship-left">
+                <input type="radio" id="express" name="shipping" value="21">
+                <div class="ship-info">
+                    <span class="ship-title">Express Shipping</span>
+                    <span class="ship-desc">2-3 business day delivery once shipped</span>
+                </div>
+            </div>
+            <span class="ship-price">$21.00</span>
+        </label>
+    </div>
+
+    <div class="shipping-option">
+        <label>
+            <div class="ship-left">
+                <input type="radio" id="priority" name="shipping" value="27">
+                <div class="ship-info">
+                    <span class="ship-title">Priority Shipping</span>
+                    <span class="ship-desc">1-2 business day delivery once shipped</span>
+                </div>
+            </div>
+            <span class="ship-price">$27.00</span>
+        </label>
+    </div>
     </section>
 
+    <input type="text" id="promo-code" placeholder="Enter promo code">
+    <button id="apply-promo">Apply</button>
 
-    <h1> Order summary </h1>
+    <!-- order summary -->
+    <h2> Order Summary </h2>
 
-    <div id="subtotal">
+    <div class="row">
         Subtotal
         <!-- price -->
+        <span id="subtotal">0.00</span>
     </div>
 
-    <div id="shipping">
+    <div class="row">
         Shipping
         <!-- price -->
+        <span id="shipping-cost">0.00</span>
     </div>
 
-    <div id="total">
+    <div class="row">
         Total
         <!-- price -->
+        <span id="total">0.00</span>
     </div>
 
 </body>
