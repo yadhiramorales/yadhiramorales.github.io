@@ -54,7 +54,7 @@ body {
 }
 
 #guessBtn:hover, #resetBtn:hover {
-    background-color: #005fcc;     
+    background-color: #8a5abd;     
     transform: scale(1.04); 
     opacity: 0.95;      
 }
@@ -62,7 +62,7 @@ body {
 #playerGuess {
     font-family: 'Arial', sans-serif;  
     font-size: 1rem;
-    caret-color: #1a90ff;  
+    caret-color: #784ea4;  
     appearance: none;  
 }
 
