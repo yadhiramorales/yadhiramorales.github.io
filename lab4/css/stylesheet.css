@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7rem;
+    margin: 20px;
+    background-color: aliceblue;
+}
+
+h1, legend {
+    color: #105596;
+}
+
+#submitBtn {
+    background-color: #1a90ff;
+    color: white;                 
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem;              
+    padding: 0.5rem 0.9rem;        
+    border: none;
+    border-radius: 8px;           
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    line-break: strict;
+}
+
+#submitBtn:hover {
+    background-color: #136cbf;     
+    transform: scale(1.04); 
+    opacity: 0.95;      
+}
+
+fieldset {
+    border-radius: 10px;
+    border: 2.5px solid #1a90ff;
+    background: rgba(109, 177, 250, 0.15);
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 180px;
+    border: 1px solid #a9c1de;
+    border-radius: 8px;
+    background: aliceblue;
+    font-size: 0.9rem;
+}
+

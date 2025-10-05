@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4</title>
+    <link href="css/stylesheet.css" rel="stylesheet">
 </head>
 <body>
     <h1> Sign Up Form </h1>
 
     <fieldset>
-    <legend>Sign Up</legend>
-    First Name: <input type="text"><br> 
-    Last Name: <input type="text"><br> 
-    Email: <input type="text"><br> 
-    Phone Number:<input type="text"><br><br>
-    Zip Code: <input type="text" id="zip"><br> 
-    City: <span id="city"></span><!-- using span so the text displays on same line -->
+    <legend><b>Sign Up</b></legend>
+    First Name:  <input type="text"><br> 
+    Last Name:  <input type="text"><br> 
+    Email:  <input type="text"><br> 
+    Phone Number:  <input type="text"><br><br>
+    Zip Code:  <input type="text" id="zip"> <!-- added zip id to get value in js script -->
+                <span id="zipFeedback"></span><br> 
+    City: <span id="city"></span> <!-- added spans for city, lat, and long for placeholders for api info -->
     <br>
     Latitude: <span id="lat"></span>
     <br>
     Longitude: <span id="long"></span>
     <br><br>
-    State:  <select id="stateOptions"></select><br>
-    Select a County: <select></select><br>
+    State:  <select id="stateDropMenu"></select><br>
+    Select a County: <select id="countyDropMenu"></select><br>
 
-    Desired Username: <input type="text"><br>
-    Password: <input type="password" id="pw"><br> 
-    <!-- <span id="pw"></span> -->
-    Type Password Again: <input type="password"><br>
-    <input type="submit" value="Sign up!">
+    Desired Username: <input type="text" id="usernameBox">
+                        <span id="userMessage"></span><br>
+    Password: <input type="password" id="pw">
+                        <span id="pwFeedback"></span><br>
+    Type Password Again: <input type="password" id="pwRetype">
+                        <span id="retypeFeedback"></span><br>
+    <input type="submit" id="submitBtn" value="Sign up!">
     </fieldset>
 
     <script src="js/script.js"></script>
